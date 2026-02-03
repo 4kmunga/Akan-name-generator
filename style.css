@@ -1,0 +1,82 @@
+* --- root ---*/
+{
+    --bg-dark #050511;
+    --glass: rgba(255, 255, 255, 0.1);
+    --neon: #00f3ff;
+    --text:var(--neon)
+} 
+
+
+
+ body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(205, 205, 98);
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+
+/* --- Akan names --- */
+.container {
+    background: rgba(16, 22, 50, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 243, 255, 0.2);
+}
+
+
+
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--neon);
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--neon);
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+}
+
+/* --- BUTTON --- */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #00f3ff, #0066ff);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-bottom: 2rem;
+}
+
+button:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0, 243, 255, 0.4); }
+button:active { transform: scale(0.98); }
+
+
+
+.result-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text-content { text-align: left; }
+.text-content h2 { margin: 0; font-size: 1.5rem; color: var(--neon); }
+.text-content p { margin: 5px 0 0 0; font-size: 0.8rem; color: #ccc; }
